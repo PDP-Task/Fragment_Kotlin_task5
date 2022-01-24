@@ -26,6 +26,9 @@ class UserAdapter(private val userList: ArrayList<User>) :
                 title.text = user.title
                 des.text = user.description
                 imageView.setImageResource(user.image)
+                if (user.isOnline) {
+                    isOnlineView.setBackgroundResource(R.drawable.view_shape)
+                }
             }
         }
     }
@@ -38,5 +41,6 @@ class UserAdapter(private val userList: ArrayList<User>) :
         val title: TextView = view.findViewById(R.id.text_title_user)
         val des: TextView = view.findViewById(R.id.text_des_user)
         val imageView: ImageView = view.findViewById(R.id.image_item_user)
+        val isOnlineView: View = view.findViewById(R.id.round_view_user)
     }
 }

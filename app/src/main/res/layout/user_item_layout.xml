@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/blue_light"
-    android:layout_margin="4dp">
+    android:layout_margin="4dp"
+    android:background="@color/blue_light">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,11 +20,12 @@
             android:src="@drawable/kane" />
 
         <View
+            android:id="@+id/round_view_user"
             android:layout_width="19dp"
             android:layout_height="19dp"
             android:layout_gravity="bottom"
             android:layout_marginStart="-22dp"
-            android:background="@drawable/view_shape" />
+            android:background="@drawable/view_shape_offline" />
 
         <LinearLayout
             android:layout_width="match_parent"
